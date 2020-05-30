@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <a routerLinkActive="active" routerLink='' class="navbar-brand">Track Show</a>
+  
+  
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+  
+  
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a routerLinkActive="active" class="nav-link" routerLink='/movies' (click)="isMenuCollapsed = true">Movies</a>
+        </li>
+        <li class="nav-item ">
+          <a routerLinkActive="active" class="nav-link" routerLink='/tv-series' (click)="isMenuCollapsed = true">TV Series</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a routerLinkActive="active" routerLink='/login' class="nav-link"  (click)="isMenuCollapsed = true">Login</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link"  (click)="isMenuCollapsed = true">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" routerLink='/profile' class="nav-link"  (click)="isMenuCollapsed = true">Profile</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
