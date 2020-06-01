@@ -11,6 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SeriesComponent } from './series/series.component';
+import { EpisodeListComponent } from './episode-list/episode-list.component';
+import { SeasonListComponent } from './season-list/season-list.component';
+import { SeasonEpisodesListComponent } from './season-episodes-list/season-episodes-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SeriesListComponent,
     LoginComponent,
     ProfileComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SeriesComponent,
+    EpisodeListComponent,
+    SeasonListComponent,
+    SeasonEpisodesListComponent
   ],
   imports: [
     BrowserModule,

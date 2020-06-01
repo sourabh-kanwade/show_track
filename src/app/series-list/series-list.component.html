@@ -1,12 +1,11 @@
 <div class="ml-5">
   <div class="col">
     <div class="row">
-      <a *ngFor ="let series of serieslist" href="">
-        <div  class="card mr-3 mb-3" style="width: 10rem;">
-          <img class="card-img-top" src="{{series.image.medium}}" alt="Card image cap">
+      <a *ngFor ="let series of serieslist" [routerLink] = "['/tv-series' ,series.id]">
+        <div  class="card mr-3 mb-3 bg-dark text-white" style="width: 10rem;">
+          <img class="card-img" src="{{series.image.medium}}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">{{series.name}}</h5>
-            <ngb-rating rate="{{series.rating.average}}"></ngb-rating>
+            <h6 class="card-title">{{series.name}}</h6>
           </div>
         </div>
       </a>

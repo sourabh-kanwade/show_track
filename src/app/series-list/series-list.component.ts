@@ -7,7 +7,7 @@ import { MovieServiceService } from '../movie-service.service';
   styleUrls: ['./series-list.component.css']
 })
 export class SeriesListComponent implements OnInit {
-   serieslist=[];
+   serieslist;
   constructor(private dataService:MovieServiceService) { }
 
   ngOnInit(): void {

@@ -1,0 +1,23 @@
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Number</th>
+      <th scope="col">Image</th>
+      <th scope="col">Date</th>
+      <th scope="col">Name</th>
+      
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let episode of seasonepisodes">
+      <th scope="row">{{episode?.number}}</th>
+      <td>
+        <img src={{episode?.image?.medium}} class=" img-fluid">
+      </td>
+      <td>{{episode?.airdate|date}}</td>
+      <td>{{episode?.name}}</td>
+    
+    </tr>
+    </tbody>
+  </table>
